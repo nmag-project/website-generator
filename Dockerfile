@@ -1,4 +1,4 @@
-from alpine
+from alpine:3.11
 
 add . /nmag-www
 workdir /nmag-www
@@ -13,4 +13,4 @@ run chmod 755 rest2web-0.5.1/r2w.py
 run ln -s /nmag-www/rest2web-0.5.1/r2w.py /bin/r2w
 
 # Compile the docs
-run make
+cmd make r2w

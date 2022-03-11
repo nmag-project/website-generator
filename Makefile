@@ -4,6 +4,15 @@ MREV=0.2
 
 WEBROOT=webroot
 
+#use a docker container to build
+docker:
+	docker build -t nmag-www .
+	docker run -it --rm -v "$$PWD"/output:/nmag-www/output nmag-www
+
+#debug using a docker container
+docker-debug:
+	docker build -t nmag-www .
+	docker run -it --rm -v "$$PWD"/output:/nmag-www/output nmag-www ash
 
 #run r2w and copy updated static html to local webroot
 r2w:
@@ -26,14 +35,3 @@ fetch-docs:
 install-doc:
 	cp input/0.2/install/_a_index input/0.2/install/install_a.txt
 	cat  ../dist/INSTALL >> input/0.2/install/install_a.txt
-
-
-
-
-
-
-
-
-
-
-
