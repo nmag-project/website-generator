@@ -4,15 +4,16 @@ MREV=0.2
 
 WEBROOT=webroot
 
-#use a docker container to build
+# use a docker container to build and run r2w
 docker:
 	docker build -t nmag-www .
-	docker run -it --rm -v "$$PWD"/output:/nmag-www/output nmag-www
+	docker run -it --rm -v "$$PWD":/nmag-www nmag-www make r2w
 
-#debug using a docker container
+# debug using a docker container.
+# Type 'make r2w' in the container to trigger compilation
 docker-debug:
 	docker build -t nmag-www .
-	docker run -it --rm -v "$$PWD"/output:/nmag-www/output nmag-www ash
+	docker run -it --rm -v "$$PWD":/nmag-www nmag-www ash
 
 #run r2w and copy updated static html to local webroot
 r2w:
