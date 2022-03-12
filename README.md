@@ -22,4 +22,4 @@ This is also available as a debian package 'rest2web'.
 
 Just type 'make r2w', and wait.
 
-The html-root is produced in the 'output' directory.
+The html-root is produced in the 'webroot' directory.
