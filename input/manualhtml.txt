@@ -7,5 +7,5 @@ restindex
       Nmag Manual (html)
     /description
     build: No
-    target: https://nmag-project.github.io/nmag-doc
+    target: /nmag-doc
 /restindex
