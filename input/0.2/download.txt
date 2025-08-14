@@ -15,10 +15,10 @@ Download version 0.2
 ====================
 
 
-* `Core and (nearly) all support libraries and tools <0.2/download/all>`__ (`Installation instructions <0.2/install/install_a.html>`__) -- Tarball including most supporting libraries (brings its own Python etc)
+* `Core and (nearly) all support libraries and tools <https://github.com/fangohr/nmag-releases/raw/master/0.2/all/nmag-0.2.1.tar.gz>`__ (`Installation instructions <0.2/install/install_a.html>`__) -- Tarball including most supporting libraries (brings it's own Python etc)
 
 
-* `Core code only <0.2/download/core>`__ (`Installation instructions <0.2/install/install_a.html>`__) 
+* `Core code only <https://github.com/fangohr/nmag-releases/raw/master/0.2/core/nmag-core-0.2.1.tar.gz>`__ (`Installation instructions <0.2/install/install_b.html>`__) 
 
 
 
